@@ -5,22 +5,21 @@
 */
 
 #include <iostream>
-using namespace std;
 
 int main()
 {
     int first, second;
-    cout << "Enter the first number: \n";
-    cin >> first;
+    std::cout << "Enter the first number: \n";
+    std::cin >> first;
 
-    cout << "Enter the seecond number: \n";
-    cin >> second;
+    std::cout << "Enter the seecond number: \n";
+    std::cin >> second;
 
     if(first > second){
-        cout << "The smaller of the two is " << second << "\n";
+        std::cout << "The smaller of the two is " << second << "\n";
     }
     else{
-        cout << "The smaller of the two is " << first << "\n";
+        std::cout << "The smaller of the two is " << first << "\n";
     }
 
     return 0;

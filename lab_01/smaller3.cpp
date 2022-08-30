@@ -21,16 +21,16 @@ int main()
 {
     int first, second, third;
 
-    cout << "Enter the first number: \n";
-    cin >> first;
+    std::cout << "Enter the first number: \n";
+    std::cin >> first;
 
-    cout << "Enter the seecond number: \n";
-    cin >> second;
+    std::cout << "Enter the seecond number: \n";
+    std::cin >> second;
 
-    cout << "Enter the third number: \n";
-    cin >> third;
+    std::cout << "Enter the third number: \n";
+    std::cin >> third;
 
-    cout << "The smaller of the two is " << findSmaller(findSmaller(first, second), third) << "\n";
+    std::cout << "The smaller of the two is " << findSmaller(findSmaller(first, second), third) << "\n";
 
     return 0;
 }

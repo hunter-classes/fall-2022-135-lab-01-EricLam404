@@ -5,7 +5,6 @@
 */
 
 #include <iostream>
-using namespace std;
 
 bool isLeap(int year){
     if(year % 4 != 0){
@@ -26,26 +25,26 @@ int main()
 {
     int year, month;
 
-    cout << "Enter year: \n";
-    cin >> year;
+    std::cout << "Enter year: \n";
+    std::cin >> year;
 
-    cout << "Enter month: \n";
-    cin >> month;
+    std::cout << "Enter month: \n";
+    std::cin >> month;
 
     if(month <= 7 && month % 2 == 1){
-        cout << "31 Days \n";
+        std::cout << "31 Days \n";
     } 
     else if(month >= 8 && month <= 12 && month % 2 == 0){
-        cout << "31 Days \n";
+        std::cout << "31 Days \n";
     }
     else if(month != 2){
-        cout << "30 Days \n";
+        std::cout << "30 Days \n";
     }
     else if(isLeap(year)){
-        cout << "29 Days \n";
+        std::cout << "29 Days \n";
     }
     else {
-        cout << "28 Days \n";
+        std::cout << "28 Days \n";
     }
     return 0;
 }
